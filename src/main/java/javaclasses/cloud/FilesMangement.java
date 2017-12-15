@@ -4,7 +4,7 @@ package javaclasses.cloud;
 import java.io.FileNotFoundException;
 
 public interface FilesMangement {
-    FileVO createFile(File file) throws FileWorkException;
+    FileVO createFile(FileVO file) throws FileWorkException;
 
     FileVO uploadFile(FileVO fileVO) throws FileWorkException;
 
