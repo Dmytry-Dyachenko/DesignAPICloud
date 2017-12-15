@@ -1,8 +1,8 @@
 package javaclasses.cloud.impl.managerimplementation;
 
 import javaclasses.cloud.UserAuthentication;
+import javaclasses.cloud.impl.Credentials;
 import javaclasses.cloud.impl.SecurityToken;
-import sun.security.krb5.Credentials;
 
 import javax.security.sasl.AuthenticationException;
 

@@ -8,7 +8,7 @@ import javaclasses.cloud.impl.valueobject.FileVO;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
-public interface FilesMangement {
+public interface FilesManagement {
 
     void createFile(SecurityToken securityToken, InputStream stream, FileVO fileVO) throws FileWorkException;
 

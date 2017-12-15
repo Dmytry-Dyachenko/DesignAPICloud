@@ -1,7 +1,7 @@
 package javaclasses.cloud.impl.managerimplementation;
 
 import javaclasses.cloud.FileWorkException;
-import javaclasses.cloud.FilesMangement;
+import javaclasses.cloud.FilesManagement;
 import javaclasses.cloud.impl.SecurityToken;
 import javaclasses.cloud.impl.tinytype.FileId;
 import javaclasses.cloud.impl.valueobject.FileVO;
@@ -9,7 +9,7 @@ import javaclasses.cloud.impl.valueobject.FileVO;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
-public class FilesMangementImpl implements FilesMangement {
+public class FileManagementImpl implements FilesManagement {
     @Override
     public void createFile(SecurityToken securityToken, InputStream stream, FileVO fileVO) throws FileWorkException {
 

@@ -13,4 +13,28 @@ public class FileVO {
         this.fileName = fileName;
         this.type = type;
     }
+
+    public FileId getId() {
+        return id;
+    }
+
+    public void setId(FileId id) {
+        this.id = id;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public FileType getType() {
+        return type;
+    }
+
+    public void setType(FileType type) {
+        this.type = type;
+    }
 }

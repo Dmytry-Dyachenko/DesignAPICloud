@@ -3,11 +3,12 @@ package javaclasses.cloud.impl.managerimplementation;
 import javaclasses.cloud.FilesSharingManagement;
 import javaclasses.cloud.LinkGenerationException;
 import javaclasses.cloud.impl.SecurityToken;
-import javaclasses.cloud.impl.valueobject.FileVO;
+import javaclasses.cloud.impl.tinytype.FileId;
 
 public class FilesSharingManagementImpl implements FilesSharingManagement {
+
     @Override
-    public String generateLinkForShareFile(SecurityToken securityToken, FileVO fileVO) throws LinkGenerationException {
+    public String generateLinkForShareFile(SecurityToken securityToken, FileId id) throws LinkGenerationException {
         return null;
     }
 }
