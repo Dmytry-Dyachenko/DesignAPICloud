@@ -2,10 +2,12 @@ package javaclasses.cloud;
 
 import sun.security.krb5.Credentials;
 
+import javax.security.auth.login.AccountNotFoundException;
+
 public interface WelcomeWindow {
 
-    SecurityToken singIn(Credentials credentials);
+    SecurityToken singIn(Credentials credentials) throws AccountNotFoundException;
 
-    User createAccount(User user);
+    UserVO createAccount(User user) throws AccountCreationException;
 
 }

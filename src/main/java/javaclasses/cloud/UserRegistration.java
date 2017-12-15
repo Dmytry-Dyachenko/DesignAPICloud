@@ -2,10 +2,12 @@ package javaclasses.cloud;
 
 import sun.security.krb5.Credentials;
 
+import javax.security.auth.login.AccountNotFoundException;
+
 public interface UserRegistration {
 
-    User createAccountThrowSocialNetwork(Credentials socialNetworkCredentials);
+    UserVO createAccountThrowSocialNetwork(Credentials socialNetworkCredentials) throws AccountNotFoundException;
 
-    User createNewAccount(User user);
+    UserVO createNewAccount(User user) throws AccountCreationException;
 
 }
