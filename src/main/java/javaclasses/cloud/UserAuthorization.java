@@ -1,5 +1,7 @@
 package javaclasses.cloud;
 
+import javaclasses.cloud.impl.SecurityToken;
+
 public interface UserAuthorization {
-    UserVO authorize(UserVO userVO) throws AuthorizationException;
+    SecurityToken authorize(UserVO userVO) throws AuthorizationException;
 }
