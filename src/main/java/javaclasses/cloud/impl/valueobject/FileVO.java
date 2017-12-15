@@ -1,17 +1,16 @@
 package javaclasses.cloud.impl.valueobject;
 
+import javaclasses.cloud.impl.FileType;
 import javaclasses.cloud.impl.tinytype.FileId;
-
-import java.io.File;
 
 public class FileVO {
     private FileId id;
     private String fileName;
-    private File file;
+    private FileType type;
 
-    public FileVO(FileId id, String fileName, File file) {
+    public FileVO(FileId id, String fileName, FileType type) {
         this.id = id;
         this.fileName = fileName;
-        this.file = file;
+        this.type = type;
     }
 }
