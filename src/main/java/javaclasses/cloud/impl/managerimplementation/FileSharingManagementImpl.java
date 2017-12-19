@@ -5,7 +5,7 @@ import javaclasses.cloud.LinkGenerationException;
 import javaclasses.cloud.impl.SecurityToken;
 import javaclasses.cloud.impl.tinytype.FileId;
 
-public class FilesSharingManagementImpl implements FilesSharingManagement {
+public class FileSharingManagementImpl implements FilesSharingManagement {
 
     @Override
     public String generateLinkForShareFile(SecurityToken securityToken, FileId id) throws LinkGenerationException {
